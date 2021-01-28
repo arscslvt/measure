@@ -1,0 +1,124 @@
+.container{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px 50px;
+}
+
+.table{
+
+}
+
+.table p:nth-child(1){
+    /* border: 1px solid orange; */
+    width: 110px;
+    color: #fff;
+    font: bold 38px 'Raleway';
+    background: linear-gradient(125deg, #004FEA, #FF5050);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: auto;
+    user-select: none;
+}
+
+.table p:nth-child(2){
+    margin-top: 20px;
+    text-align: right;
+    color: #fff;
+    font: 16px 'Source Code Pro';
+}
+
+.simone{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+
+    outline: none;
+    border: 3px solid transparent;
+    border-radius: 6px;
+    padding: 8px 25px;
+    background-color: #004FEA;
+    color: #fff;
+    font: bold 15px 'Raleway';
+
+    cursor: pointer;
+    transition: 0.2s ease;
+    user-select: none;
+}
+.simone:hover{
+    border: 3px solid #fff;
+}
+
+.bullone{
+    /* border: 1px solid green; */
+    width: 88px;
+    height: 100px;
+    background: url("assets/simone.svg") no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    position: absolute;
+    top: 350px;
+    left: 105px;
+}
+
+.viewer{
+    position: relative;
+    margin-top: -40px;
+
+    width: 1000px;
+    height: 600px;
+
+    /* border: 1px solid green; */
+}
+
+.body{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* border: 1px solid red; */
+    
+    width: 900px;
+    height: 80px;
+
+    background: url("assets/body.svg") no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.leftSlider{
+    position: absolute;
+    top: 59.1%;
+    left: 7.89%;
+    transform: translate(-50%, -50%);
+
+    /* border: 1px solid blue; */
+    
+    width: 80px;
+    height: 240.8px;
+
+    background: url("assets/leftslide.svg") no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    /* cursor: pointer; */
+}
+.rightSlider{
+    position: absolute;
+    top: 59.1%;
+    left: 26%;
+    transform: translate(-50%, -50%);
+
+    /* border: 1px solid yellow; */
+    
+    width: 218px;
+    height: 240.8px;
+
+    background: url("assets/rightslide.svg") no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    cursor: pointer;
+}

@@ -1,0 +1,87 @@
+.selectBox{
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 150px;
+    place-content: center;
+}
+
+.box{
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-rows: auto auto auto 45px;
+    gap: 15px;
+
+    width: 300px;
+}
+
+.box:nth-child(2){
+    opacity: 0.4;
+}
+
+.boximage1{
+    width: 300px;
+    height: 300px;
+
+    background: url("assets/vent.svg") no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    border-radius: 6px;
+}
+.boximage2{
+    width: 300px;
+    height: 300px;
+
+    background: url("assets/cinq.svg") no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    border-radius: 6px;
+}
+
+.boxTitle{
+    color: #fff;
+    font: bold 28px 'Raleway';
+}
+.boxSnippet{
+    color: #fff;
+    font: 16px 'Source Code Pro';
+}
+
+.boxButton1{
+    border: 3px solid #000;
+    outline: none;
+    border-radius: 6px;
+
+    background: linear-gradient(125deg, #004FEA, #FF5050);
+    color: #fff;    
+    font: bold 18px 'Raleway';
+   
+    transition: 0.2s ease;
+
+    cursor: pointer;
+    user-select: none;
+}
+.boxButton2{
+    border: 3px solid #000;
+    outline: none;
+    border-radius: 6px;
+
+    background: linear-gradient(125deg, #50FFB5, #004FEA);
+    color: #fff;    
+    font: bold 18px 'Raleway';
+   
+    transition: 0.2s ease;
+
+    cursor: pointer;
+    user-select: none;
+}
+
+.box button:hover{
+    border: 3px solid #fff;
+}

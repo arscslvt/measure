@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=Source+Code+Pro:wght@300;400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+::selection{
+    color: #fff;
+    background-color: #FF5050;
+}
+
+body{
+    background-color: #000;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeOut{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+header{
+    display: grid;
+    grid-template-columns: auto auto;
+    /* border: 1px solid rebeccapurple; */
+    align-items: center;
+    padding: 17px 20px;
+
+    user-select: none;
+}
+
+.logo{
+    color: #fff;
+    font: bold 30px 'Raleway';
+    cursor: pointer;
+}
+
+.nav{
+    margin-left: auto;
+    /* border: 1px solid rebeccapurple; */
+    display: flex;
+    gap: 25px;
+    color: #fff;
+    align-items: center;
+}
+
+.nav .nav-el{
+    opacity: 0.6;
+    padding: 4px 12px;
+    cursor: pointer;
+    font: bold 16px 'Raleway';
+
+    transition: 0.2s ease-in-out;
+}
+
+.nav p:nth-child(1){
+    font: 16px 'Source Code Pro';
+    opacity: 0.3;
+    /* padding: 4px 12px; */
+}
+
+.nav .nav-el:hover{
+    opacity: 1;
+    background-color: #fff;
+    color: #000;
+    border-radius: 6px;
+}
+
+.mobile-view{
+    display: none;
+}
+
+@media screen and (max-width: 700px){
+    .mobile-view{
+        position: fixed;
+        top: 0;
+        left: 0;
+    
+        z-index: 10;
+    
+        width: 100%;
+        height: 100%;
+        
+        background-color: #000;
+    
+        display: grid;
+        place-content: center;
+    }
+    
+    .mobile-alert{
+        display: grid;
+        gap: 20px;
+        place-content: center;
+        /* border: 1px solid red; */
+    }
+    
+    .pcicon{
+        margin-left: auto;
+        margin-right: auto;
+    
+        /* border: 1px solid red; */
+        background: url("assets/pcicon.svg") no-repeat;
+        background-size: contain;
+    
+        width: 150px;
+        height: 150px;
+    }
+    .pcinfo{
+        color: #fff;
+        font: bold 31px 'Raleway';
+        text-align: center;
+    }
+}
+
+.noti{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 20px;
+    background-color: #353535;
+    color: #fff;
+}

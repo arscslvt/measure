@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="viewer.css">
+    <title>Calibro ventesimale</title>
+</head>
+<body>
+    <header>
+        <div class="logo" id="home">← Torna al menu</div>
+        <div class="nav">
+            <p>Calibro ventesimale</p>
+            <!-- <p class="nav-el">Calibro</p> -->
+            <!-- <p class="nav-el">Micrometro</p> -->
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="viewer">
+            <div class="body"></div>
+            <div class="leftSlider" id="leftSlider"></div>
+            <div class="rightSlider" id="rightSlider"></div>
+        </div>
+        <div class="table">
+            <p>Valori</p>
+            <p>Lunghezza: <span id="lenght">0</span>mm</p>
+        </div>
+    </div>
+
+    <button class="simone" id="bullone">+ Bullone</button>
+
+    <div class="mobile-view">
+        <div class="mobile-alert">
+            <div class="pcicon"></div>
+            <div class="pcinfo">Ops, puoi utilizzare Measure<br>solo da un computer.</div>
+        </div>
+    </div>
+
+    <script src="viewer.js"></script>
+</body>
+</html>

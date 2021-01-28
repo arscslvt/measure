@@ -1,0 +1,85 @@
+.main{
+    /* border: 1px solid gray; */
+    height: 600px;
+
+    display: grid;
+    /* grid-auto-columns: 300px; */
+
+    grid-template-columns: 30px 300px 380px;
+    place-content: center;
+    align-items: center;
+    gap: 200px;
+}
+
+.post{
+    /* border: 1px solid gray; */
+
+    background: url('assets/post1.svg') no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    width: 350px;
+    height: 350px;
+
+    /* border-radius: 6px; */
+}
+
+.info{
+    /* border: 1px solid rebeccapurple; */
+    display: grid;
+    place-content: center;
+    gap: 80px;
+}
+
+.info p{
+    color: #fff;
+    font: bold 31px 'Raleway';
+    text-align: right;
+}
+
+.info button{
+    border: 3px solid #000;
+    outline: none;
+    padding: 10px;
+    background: linear-gradient(125deg, #004FEA, #FF5050);
+    color: #fff;
+    font: bold 21px 'Source Code Pro';
+    width: 210px;
+
+    cursor: pointer;
+    user-select: none;
+
+    transition: 0.2s ease;
+}
+
+.info button:hover{
+    background: linear-gradient(265deg, #004FEA, #FF5050);
+    color: #fff;
+    border: 3px solid #fff;
+}
+
+.mainTitle p{
+    transform: rotate(180deg);
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    /* border: 1px solid red; */
+
+    opacity: 0.3;
+    color: #fff;
+    font: 700 60px 'Source Code Pro';
+
+    user-select: none;
+}
+
+.footer{
+    opacity: 0.3;
+    color: #fff;
+    font: bold 12px 'Source Code Pro';
+    user-select: none;
+}
+
+.footer p{
+    text-align: center;
+}
