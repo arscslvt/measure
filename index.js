@@ -1,7 +1,7 @@
 const home = document.getElementById("home");
 
 home.addEventListener("click", function(){
-    document.location.replace("index.html");
+    document.location.assign("index.html");
 })
 
 newNoti();
@@ -19,5 +19,5 @@ infoButton.addEventListener("click", navpage1);
 
 function navpage1(){
     document.body.style.animation = "fadeOut 0.5s ease";
-    setTimeout(function(){document.location.replace("menu.html")}, 300);
+    setTimeout(function(){document.location.assign("menu.html")}, 300);
 }
