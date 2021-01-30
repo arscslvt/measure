@@ -14,7 +14,7 @@ rightSlider.style.left = "213px";
 var minPos = 212;
 var maxPos = 858;
 var currentPos;
-
+var limit = false;
 var simoneWidth = 0;
 
 var mousePosition;
@@ -37,8 +37,11 @@ document.addEventListener('mouseup', function() {
 document.addEventListener('mousemove', function(event) {
     var xPos = rightSlider.style.left.slice(0, -2);
     event.preventDefault();
+    if(event.clientX > minPos + simoneWidth && event.clientX < maxPos){
+        limit = false;
+    }
     if(xPos >= minPos + simoneWidth && xPos <= maxPos){
-        if (isDown) {
+        if (isDown && limit == false) {
             mousePosition = {
                 x : event.clientX,
             };
@@ -55,14 +58,17 @@ document.addEventListener('mousemove', function(event) {
         console.log(lenght.innerHTML);
     }else if(xPos <= minPos + simoneWidth){
         if(simoneWidth>0){
-            rightSlider.style.left = (minPos+63).toString() + 'px';
+            rightSlider.style.left = (minPos + 63).toString() + 'px';
+            limit = true;
         }else{
+            limit = true;
             rightSlider.style.left = (minPos + 1) + 'px';
         }
         xPos = minPos + simoneWidth;
     }else if(xPos >= maxPos + 1){
         rightSlider.style.left = maxPos.toString() + 'px';
         xPos = maxPos;
+        limit = true;
     }
 
     console.log("simo:", simoneWidth);
