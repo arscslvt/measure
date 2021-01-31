@@ -71,17 +71,23 @@ document.addEventListener('mousemove', function(event) {
         limit = true;
     }
 
-    console.log("simo:", simoneWidth);
+    // console.log("simo:", simoneWidth);
     
 }, true);
 
 const simone = document.getElementById("bullone");
 
 simone.addEventListener("click", function(){
+    if(simoneWidth>0){
+        simoneWidth = 0;
+        console.log(simoneWidth);
+    }
+
     var bullone = document.createElement("div");
     bullone.classList = "bullone";
+    bullone.id = "bullone";
 
-    document.getElementsByClassName("viewer")[0].appendChild(bullone);
+    document.getElementById("viewer").appendChild(bullone);
     
     console.log(bullone.style.width);
 

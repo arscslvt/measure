@@ -43,6 +43,7 @@ header{
 }
 
 .logo{
+    z-index: 1;
     color: #fff;
     font: bold 30px 'Raleway';
     cursor: pointer;
