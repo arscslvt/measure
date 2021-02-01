@@ -127,12 +127,26 @@ header{
 }
 
 .noti{
+    display: none;
     position: absolute;
-    top: 10%;
+    top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
 
-    padding: 20px;
-    background-color: #353535;
+    padding: 10px 20px;
+    background-color: #1b1b1b;
     color: #fff;
+
+    gap: 10px;
+    border-radius: 6px;
+
+    animation: fadeIn 0.3s ease;
+}
+
+.noti p:nth-child(1){
+    font: bold 20px 'Raleway';
+}
+.noti p:nth-child(2){
+    font: 14px 'Source Code Pro';
+    opacity: 0.8;
 }
